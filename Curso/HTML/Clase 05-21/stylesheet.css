@@ -1,0 +1,24 @@
+header {
+    background-color: red;
+  }
+  header nav p b {
+    background-color: yellow;
+  }
+  b {
+    color: aqua;
+  }
+  .proyectos {
+    background-color: aliceblue;
+  }
+  .color_rojo{
+      color: tomato;
+  }
+  .color_blanco{
+      color: white;
+  }
+  .color_negro{
+      color: black;
+  }
+  #proyectosTitulo{
+      background-color: blueviolet;
+  }
