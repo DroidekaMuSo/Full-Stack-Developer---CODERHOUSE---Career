@@ -17,6 +17,9 @@ ul li {
   padding: 15px;
   border-radius: 10px;
 }
+li:hover {
+  background-color: #ff3bc1;
+}
 ul a {
   text-decoration: none;
 }
@@ -49,8 +52,9 @@ h2 {
 #contacto {
   width: 15%;
   background-color: white;
+  border-color: #ff3bc1;
+  border: 3px ridge #ff3bc1;
 }
-
 form {
   display: inline;
   margin: 0;
