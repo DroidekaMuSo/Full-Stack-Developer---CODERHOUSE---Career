@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Livvic&family=Nunito:wght@300&display=swap");
+p {
+  color: #0033ff;
+  font-family: "Livvic", sans-serif;
+  line-height: 15px;
+  font-size: 12px;
+}

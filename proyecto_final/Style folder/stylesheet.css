@@ -4,6 +4,7 @@ html {
   background-color: black;
   font-family: Livvic;
   color: azure;
+  background-image: url(images/background.jpeg);
 }
 ul {
   list-style: none;
