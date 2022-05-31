@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: crimson;
+    text-align: center;
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-decoration: underline;
+}
+.titulo{
+    background-color: aquamarine;
+    width: 80%;
+    margin: 10px;
+}
+.tarjeta{
+    width: 250px;
+    margin: 10px;
+}
+
+.tarjeta img{
+    width: 300px;
+}
+.tarjetaTitulo{
+    font-size: 20px;
+}
+.tarjetaDescripcion{
+    font-size: 18px;
+}
+.tarjetaImagen{
+    width: 100%;
+    margin-top: 10px;
+}
+tarjetaBoton{
+    margin: 10px;
+}
+.tarjetaDescripcionNegrita{
+    font-weight: 800;
+}
+.banner{
+    width: 90%;
+    background-color: blueviolet;
+    padding: 20px;
+}
+.bannerTitulo{
+    text-align: center;
+    font-size: 36px;
+    color: white;
+}
+.bannerDescipcion{
+    font-size: 24px;
+    color: white;
+}
+.bannerBtn, button{
+    font-size: 20px;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+bofy{
+    background-image: url();
+}
