@@ -1,10 +1,20 @@
 /* Navegador-Menu */
 @import url("https://fonts.googleapis.com/css2?family=Livvic&display=swap");
+*{
+  padding: 0;
+  margin: 0;
+}
 html {
-  background-color: black;
   font-family: Livvic;
   color: azure;
   background-image: url(images/background.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*header*/
+header{
+  margin: 30px auto;
+  width: 80%;
 }
 ul {
   list-style: none;
@@ -12,10 +22,10 @@ ul {
 }
 
 ul li {
-  display: inline;
-  margin: 0 10px;
+  display: inline-block;
   background-color: #ff1493;
-  padding: 15px;
+  padding: 10px;
+  margin: 0;
   border-radius: 10px;
 }
 li:hover {
@@ -38,15 +48,21 @@ a:hover {
 }
 
 /* Index */
-img {
-  width: 100%;
-  height: auto;
-  opacity: 0.5;
+main{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
-
-h2 {
+main h1{
   text-align: center;
 }
+
+main section{
+  text-align: center;
+  margin-top: 15px;
+}
+
 
 /* Contacto */
 
