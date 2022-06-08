@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  width: 100%;
+  height: 70px;
+  background-color: #001850;
+  display: flex;
+  padding: 0 4px;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+}
+.navbar ul li {
+  padding: 10px;
+}
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.redes {
+  display: flex;
+  justify-content: space-around;
+}
+.redes img {
+  width: 80%;
+}
+
+.fondo-header {
+  background-image: url("https://github.com/maxirosanda/clase5-resumenFinal/blob/master/assets/img/paisaje2.jpg?raw=true");
+  width: 100%;
+  height: 300px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fondo-header h1 {
+  text-align: center;
+  color: white;
+}
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tarjeta {
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 15px;
+}
+
+.tarjeta__img{
+    margin: 15vh 0;
+}
+
+.btn {
+  background-color: #001850;
+  color: white;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px #001850;
+}

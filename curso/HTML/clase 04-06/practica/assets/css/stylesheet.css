@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 70px 250px auto 100px;
+  grid-template-areas:
+    "navbar navbar navbar navbar"
+    "header header header header"
+    "main main main main"
+    "footer footer footer footer";
+}
+.navbar {
+  grid-area: navbar;
+}
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+.footer {
+  grid-area: footer;
+}
+
+table {
+  min-width: ;
+}

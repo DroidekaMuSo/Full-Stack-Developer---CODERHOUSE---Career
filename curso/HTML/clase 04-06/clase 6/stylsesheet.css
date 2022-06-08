@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 150px 1fr 1fr 100px;
+  grid-template-areas:
+    "nav header header"
+    "nav main aside"
+    "nav section aside"
+    "nav footer footer";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.navegador {
+  grid-area: nav;
+  background-color: aqua;
+}
+.encabezado {
+  grid-area: header;
+  background-color: blue;
+}
+.principal {
+  grid-area: main;
+  background-color: blueviolet;
+}
+.publicidad {
+  grid-area: aside;
+  background-color: brown;
+}
+.noticias {
+  grid-area: section;
+  background-color: gray;
+}
+.pie {
+  grid-area: footer;
+  background-color: black;
+}
