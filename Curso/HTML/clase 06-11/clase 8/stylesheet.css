@@ -58,7 +58,6 @@ form input:focus {
   margin: 50px;
   animation: mover 4s;
   animation-iteration-count: infinite;
-  -o-animation-timing-function: ;
 }
 
 .redondel2{
