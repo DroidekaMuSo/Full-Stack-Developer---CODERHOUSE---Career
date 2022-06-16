@@ -1,99 +1,321 @@
 /* Navegador-Menu */
 @import url("https://fonts.googleapis.com/css2?family=Livvic&display=swap");
-*{
+* {
   padding: 0;
   margin: 0;
-}
-html {
+  box-sizing: border-box;
   font-family: Livvic;
-  color: azure;
-  background-image: url(images/background.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
-/*header*/
-header{
-  margin: 30px auto;
-  width: 80%;
-}
-ul {
-  list-style: none;
-  text-align: center;
+img {
+  width: 30%;
 }
 
-ul li {
-  display: inline-block;
-  background-color: #ff1493;
-  padding: 10px;
-  margin: 0;
-  border-radius: 10px;
+/* Main 576 pixeles */
+.header {
+  display: grid;
+  grid-template-columns: 8fr 2fr repeat(2, 0.5fr);
+  grid-template-areas: "img user car menu";
+  align-items: center;
+  justify-content: flex-end;
+  margin: 2%;
 }
-li:hover {
+.header-inicio img {
+  grid-area: img;
+  width: 20%;
+  border-radius: 15px;
+}
+
+.header-user .signUp {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-user .signUp p {
+  color: white;
   background-color: #ff3bc1;
+  padding: 5px;
+  border-radius: 15px;
+  margin: 3px;
+  grid-area: welcome;
 }
-ul a {
+.header-user .signUp img {
+  width: 40%;
+  border-radius: 50px;
+  border: 1px solid #ff3bc1;
+  grid-area: user;
+}
+.header-user nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.header .fa-cart-shopping {
+  font-size: xx-large;
+  color: #ff3bc1;
+  grid-area: car;
+  vertical-align: top;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li .fa-bars {
+  color: #ff3bc1;
+  font-size: xx-large;
+  margin-left: 10px;
+  grid-area: menu;
+}
+
+nav ul li .fa-bars ul {
+  display: none;
+  font-size: x-large;
+}
+
+nav ul li .fa-bars:hover ul {
+  display: block;
+}
+nav ul li .fa-bars:hover ul li {
+  padding: 5%;
+  background-color: #ff3bc1;
+  margin: 3% 0;
+  border-radius: 15px;
+  overflow: hidden;
+  font-size: 60%;
+}
+nav ul li .fa-bars ul li:hover {
+  background-color: #fd00ad;
+}
+nav ul li .fa-bars:hover ul li a {
+  color: white;
   text-decoration: none;
 }
 
-ul a:visited {
-  color: white;
+/* main */
+
+main .main-description {
+  width: 90%;
+  text-align: justify;
+  margin: 5% auto;
+  border: 1px dashed #ff3bc1;
+  border-radius: 20px;
+  padding: 5%;
 }
-ul a:link {
-  color: white;
+main .main-description h1 {
+  text-align: center;
+  color: #ff3bc1;
+  margin-bottom: 5%;
 }
 
-a:hover {
-  color: chartreuse;
-  text-decoration: underline;
+main .main-section .main-sell {
+  border: 1px solid #ff1493;
+  border-radius: 10px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  color: #ff1493;
+  text-align: center;
+  grid-template-rows: repeat(4, 1fr, 2fr);
+  grid-template-areas:
+    "title title title title "
+    "img1 img2 img3 img4"
+    "title2 title2 title2 title2 "
+    "img7 img8 img9 img10 "
+    "title3 title3 title3 title3 "
+    "img13 img14 img15 img16 ";
 }
 
-/* Index */
-main{
+.main-sell div {
+  box-shadow: 5px 5px 15px -2px rgba(255, 20, 147, 0.5);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+.main-sell div img {
+  width: 40%;
+  margin: 15px;
+}
+
+.bestSell {
+  grid-area: title;
+}
+.img1 {
+  grid-area: img1;
+}
+.img2 {
+  grid-area: img2;
+}
+.img3 {
+  grid-area: img3;
+}
+.img4 {
+  grid-area: img4;
+}
+.img5 {
+  grid-area: img5;
+  display: none;
+}
+.img6 {
+  grid-area: img6;
+  display: none;
+}
+.bestWorkOuts {
+  grid-area: title2;
+}
+.img7 {
+  grid-area: img7;
+}
+.img8 {
+  grid-area: img8;
+}
+.img9 {
+  grid-area: img9;
+}
+.img10 {
+  grid-area: img10;
+}
+.img11 {
+  grid-area: img11;
+  display: none;
+}
+.img12 {
+  grid-area: img12;
+  display: none;
+}
+.bestDiets {
+  grid-area: title3;
+}
+.img13 {
+  grid-area: img13;
+}
+.img14 {
+  grid-area: img14;
+}
+.img15 {
+  grid-area: img15;
+}
+.img16 {
+  grid-area: img16;
+}
+.img17 {
+  grid-area: img17;
+  display: none;
+}
+.img18 {
+  grid-area: img18;
+  display: none;
+}
+
+
+
+/* Contacto  576 */
+.contacto-main{
+  display: flex;
+  width: 95%;
+  margin: 3% auto;
+  justify-content: space-between;
+
+}
+.contacto-form{
+  width: 60%;
+}
+.contacto-form form{
+  border: 1px solid #fd00ad;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-main h1{
-  text-align: center;
+  padding: 10%;
 }
 
-main section{
-  text-align: center;
-  margin-top: 15px;
+.contacto-form form legend{
+  margin: 3% 0 5% 5%;
+  font-size: large;
+  font-weight: bold;
+  color: #fd00ad;
 }
 
-
-/* Contacto */
-
-#contacto {
-  width: 15%;
-  background-color: white;
-  border-color: #ff3bc1;
-  border: 3px ridge #ff3bc1;
-}
-form {
-  display: inline;
-  margin: 0;
-  background-color: white;
-  color: black;
+.contacto-form form label{
+  margin: 3% 5%;
+  font-size: large;
+  color: #fd00ad;
 }
 
-legend,
-input {
+.contacto-form form input{
+  margin: 3% 5% ;
+  font-size: large;
+}
+.contacto-form form textarea{
+  margin: 3% 5% ;
+  font-size: large;
+}
+
+.redes{
+  width: 60%;
+  padding: 5%;
+}
+.redes p{
+  line-height: 20px;
+}
+.redes-icons a {
+  text-decoration: none;
+}
+.redes-icons a i{
+  margin: 5%;
   display: block;
-  margin: 10px 0px;
+  color: #fd00ad;
+  font-size: 2vh;
+
 }
 
-#contacto_pagina {
-  display: inline-flex;
-}
+
+
 
 /* footer */
 footer {
+  height: 3%;
+  border: 1px solid #ff1493;
+  border-radius: 10px;
   text-align: center;
-  bottom: 0;
   position: absolute;
-  width: 100%;
-  height: 40px;
+  right: 5%;
+  width: 90%;
+}
+
+/* Main 768px */
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: grid;
+    grid-template-columns: 2fr 2fr 7fr 2fr;
+    grid-template-areas: "img user menu car";
+  }
+  .header-inicio img {
+    grid-area: img;
+    width: 90%;
+    border-radius: 15px;
+  }
+  nav ul li .fa-bars {
+    width: 100%;
+  }
+  nav ul li .fa-bars:hover ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: medium;
+  }
+  nav ul li .fa-bars:hover ul li {
+    padding: 2%;
+    background-color: #ff3bc1;
+    margin: 3% 0;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size: 60%;
+  }
+}
+/* Main 1024px */
+@media screen and (min-width: 992px) {
+  nav ul li .fa-bars:hover ul li {
+    font-size: medium;
+  }
 }
