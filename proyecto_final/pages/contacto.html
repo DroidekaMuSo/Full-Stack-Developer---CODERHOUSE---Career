@@ -54,18 +54,56 @@
     <main class="contacto-main">
       <section class="contacto-form">
         <form action="">
-          <legend>Contacto</legend>
           <label for="nombre">Nombre</label>
-          <input type="text" />
-          <label for="apellidos">Apellidos</label>
-          <input type="text" />
-          <label for="celular">Celular</label>
-          <input type="tel" />
-          <label for="correo">Email</label>
-          <input type="email" />
-          <label for="mensaje">Mensaje</label>
-          <textarea name="mensaje" id="" cols="20" rows="10"></textarea>
-          <input type="submit" />
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Ingrese su nombre"
+            required
+          />
+  
+          <label for="apellido">Apellidos</label>
+          <input
+            type="text"
+            name="apellido"
+            placeholder="Ingrese su apellido "
+            required
+          />
+  
+          <label for="number">Numero de telefono</label>
+          <input
+            type="number"
+            name="tel"
+            placeholder="Ingrese su telefono"
+            required
+          />
+
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Ingrese su correo"
+            required
+          />
+  
+          <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+  
+          <select name="talla">
+            <option value="h">Hombre</option>
+            <option value="m">Mujer</option>
+            <option value="na">Prefiero no decir</option>
+          </select>
+          <div>
+            <label for="acepto">Acepto terminos y condiciones</label>
+            <input
+              type="checkbox"
+              name="acepto"
+              id="acepto"
+              value="si"
+              required
+            />
+          </div>
+          <input type="submit" value="Enviar" />
         </form>
       </section>
       <section class="redes">
@@ -76,11 +114,11 @@
             temporibus earum distinctio! Fuga!
           </p>
           <div class="redes-icons">
-            <a href="#"><i class="fa-brands fa-facebook">Facebook</i></a>
-            <a href="#"><i class="fa-brands fa-instagram"> Instagram</i></a>
-            <a href="#"><i class="fa-brands fa-twitter"> Twitter</i></a>
-            <a href="#"><i class="fa-brands fa-whatsapp"> 4657897899</i></a>
-            <a href="#"><i class="fa-solid fa-envelope">  Email</i></a>
+            <a href="#" class="left"><i class="fa-brands fa-facebook"> Facebook</i></a>
+            <a href="#" class="right"><i class="fa-brands fa-instagram"> Instagram</i></a>
+            <a href="#" class="left"><i class="fa-brands fa-twitter"> Twitter</i></a>
+            <a href="#" class="right"><i class="fa-brands fa-whatsapp"> 4657897899</i></a>
+            <a href="#" class="left"><i class="fa-solid fa-envelope">  Email</i></a>
           </div>
         </section>
     </main>

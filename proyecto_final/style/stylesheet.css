@@ -248,6 +248,10 @@ main .main-section .main-sell {
   margin: 3% 5% ;
   font-size: large;
 }
+.contacto-form form select{
+  width: 80%;
+  margin: 3% 5%;
+}
 
 .redes{
   width: 60%;
@@ -266,9 +270,6 @@ main .main-section .main-sell {
   font-size: 2vh;
 
 }
-
-
-
 
 /* footer */
 footer {
@@ -311,6 +312,17 @@ footer {
     border-radius: 15px;
     overflow: hidden;
     font-size: 60%;
+  }
+
+  .redes .redes-icons{
+    font-size: x-large;
+    margin-top: 15%;
+  }
+  .left{
+    text-align: start;
+  }
+  .right{
+    text-align: end;
   }
 }
 /* Main 1024px */

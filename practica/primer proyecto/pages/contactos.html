@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contactos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="ubicacion.html">Ubicacion</a></li>
+        <li><a href="contactos.html">Contactos</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>Contactos</h1>
+    </header>
+    <main>
+      <form action="">
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Ingrese su nombre"
+          required
+        />
+
+        <label for="apellido">Apellidos</label>
+        <input
+          type="text"
+          name="apellido"
+          placeholder="Ingrese su apellido "
+          required
+        />
+
+        <label for="number">Numero de telefono</label>
+        <input
+          type="number"
+          name="tel"
+          placeholder="Ingrese su telefono"
+          required
+        />
+
+        <textarea name="mensaje" placeholder="Ingrese su mensaje"></textarea>
+
+        <div class="form-sexo">
+          <label for="hombre">hombre</label>
+          <input type="radio" name="sexo" id="hombre" value="h" />
+
+          <label for="mujer">Mujer</label>
+          <input type="radio" name="sexo" id="mujer" value="m" />
+
+          <label for="nb">No binario</label>
+          <input type="radio" name="sexo" id="nb" value="nb" />
+        </div>
+        <select name="talla">
+          <option value="large">Large</option>
+          <option value="medium">Medium</option>
+          <option value="small">Small</option>
+        </select>
+        <div>
+          <label for="acepto">Acepto terminos y condiciones</label>
+          <input
+            type="checkbox"
+            name="acepto"
+            id="acepto"
+            value="si"
+            required
+          />
+        </div>
+        <input type="submit" value="Enviar" />
+      </form>
+    </main>
+    <aside></aside>
+    <footer>
+      <h5>Todos los derechos reservados</h5>
+    </footer>
+  </body>
+</html>
