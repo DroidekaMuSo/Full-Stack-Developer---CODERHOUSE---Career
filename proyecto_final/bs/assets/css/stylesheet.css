@@ -40,4 +40,45 @@ textarea {
   box-shadow: 5px 5px 24px -4px rgba(255, 20, 147, 0.2);
 }
 
-
+/* Animaciones */
+/* Animacion button-header */
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+  @keyframes heartbeat {
+    from {
+      transform: scale(1);
+      transform-origin: center center;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      transform: scale(0.91);
+      animation-timing-function: ease-in;
+    }
+    17% {
+      transform: scale(0.98);
+      animation-timing-function: ease-out;
+    }
+    33% {
+      transform: scale(0.87);
+      animation-timing-function: ease-in;
+    }
+    45% {
+      transform: scale(1);
+      animation-timing-function: ease-out;
+    }
+  }
+  /* Animacion Navbar */
+  .fade-in-left {
+    animation: fade-in-left 0.6s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  }
+  @keyframes fade-in-left {
+    0% {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
