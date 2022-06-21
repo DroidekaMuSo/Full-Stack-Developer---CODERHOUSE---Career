@@ -1,0 +1,43 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Index */
+/* Main tarjetas */
+.card-header {
+  font-size: large;
+  font-weight: bold;
+}
+.btn {
+  background-color: rgba(255, 20, 147);
+}
+.card {
+  box-shadow: 5px 5px 24px -4px rgba(255, 20, 147, 0.3);
+}
+main i,
+header i {
+  color: rgba(255, 20, 147);
+}
+
+/* Contacto  */
+.contacto-container {
+  background-image: url(../images/img13.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  opacity: 0.6;
+}
+.contacto-container p{
+    opacity: 1;
+}
+label {
+  font-weight: bold;
+}
+input,
+textarea {
+  box-shadow: 5px 5px 24px -4px rgba(255, 20, 147, 0.2);
+}
+
+
