@@ -1,0 +1,134 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.topNav {
+  background-color: aqua;
+  margin-bottom: 10px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.topNav ul {
+  display: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.topNav a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+.fa-bars {
+  color: white;
+}
+
+.miEstilo {
+  background-color: crimson;
+  margin-bottom: 10px;
+  width: 90%;
+  padding: 10px;
+}
+
+.contenedor {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.botones {
+  display: flex;
+  margin: 10px;
+}
+.boton {
+  text-decoration: none;
+  background-color: blue;
+  padding: 5px 10px;
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  border: 0;
+}
+.boton:hover {
+  background-color: crimson;
+}
+.boton:active {
+  background-color: aqua;
+}
+.boton:visited {
+  background-color: chocolate;
+}
+.boton:link {
+  background-color: blue;
+}
+/* 
+div:not(.botones){
+    background-color: darkslategray;
+} */
+
+.imagen {
+  width: 200px;
+}
+.lista {
+  padding: 15px;
+}
+.lista h5 {
+  padding: 15px;
+}
+.lista h5:nth-child(odd) {
+  background-color: fuchsia;
+}
+
+.form {
+  margin: 20px;
+}
+.grupo {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+.form input {
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.form input:focus {
+  outline: none;
+  border: 2px solid red;
+}
+.form input:required {
+  background-color: rgb(184, 134, 11, 0.4);
+}
+.form input :disabled{
+    background-color: black;
+}
+.form input::placeholder {
+  text-align: center;
+  color: rgb(0, 0, 128, 0.4);
+}
+.form label {
+  width: 80px;
+}
+/* Media Queries */
+@media (min-width: 768px) {
+  .topNav ul {
+    flex-direction: row;
+  }
+  .fa-bars {
+    display: none;
+  }
+  .miEstilo {
+    background-color: blue;
+    width: 40%;
+  }
+  .contenedor {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
